@@ -12,10 +12,14 @@ public class Supplier {
     private int id;
     private String name;
     private String password;
-    public Supplier(String name,String password) {
+    private Integer phoneid;
+
+    public Supplier(String name, String password, Integer phoneid) {
         this.name = name;
-        this.password=password;
+        this.password = password;
+        this.phoneid = phoneid;
     }
+
     public Supplier() {
 
     }
@@ -43,6 +47,14 @@ public class Supplier {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getPhoneid() {
+        return phoneid;
+    }
+
+    public void setPhoneid(Integer phoneid) {
+        this.phoneid = phoneid;
     }
 
     @Override

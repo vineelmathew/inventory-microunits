@@ -22,7 +22,6 @@ public class SupplierServiceImple implements ISupplierService {
     }
     @Override
     public List<Supplier> supplierList() {
-
         List<Supplier> result=supplierDao.supplierList();
         return result;
     }

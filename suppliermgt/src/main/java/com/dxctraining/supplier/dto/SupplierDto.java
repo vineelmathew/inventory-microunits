@@ -4,11 +4,14 @@ public class SupplierDto {
     private int id;
     private String name;
     private String password;
+    private Integer phoneid;
+    private String productName;
 
-    public SupplierDto(int id, String name, String password) {
+    public SupplierDto(int id, String name, String password,Integer phoneid) {
         this.id = id;
         this.name = name;
         this.password = password;
+        this.phoneid=phoneid;
     }
     public SupplierDto()
     {
@@ -39,5 +42,19 @@ public class SupplierDto {
         this.password = password;
     }
 
+    public Integer getPhoneid() {
+        return phoneid;
+    }
 
+    public void setPhoneid(Integer phoneid) {
+        this.phoneid = phoneid;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
 }
