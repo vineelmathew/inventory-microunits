@@ -3,14 +3,8 @@ package com.dxctraining.phone.dto;
 public class Createphone {
     private String name;
     private int size;
-    public Createphone(String name, int size) {
-        this.name = name;
-        this.size = size;
-    }
-    public Createphone()
-    {
-
-    }
+    private double price;
+    private int supplierid;
 
     public String getName() {
         return name;
@@ -28,5 +22,19 @@ public class Createphone {
         this.size = size;
     }
 
+    public double getPrice() {
+        return price;
+    }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getSupplierid() {
+        return supplierid;
+    }
+
+    public void setSupplierid(int supplierid) {
+        this.supplierid = supplierid;
+    }
 }

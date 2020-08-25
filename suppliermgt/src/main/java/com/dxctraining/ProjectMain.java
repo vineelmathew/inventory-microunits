@@ -2,6 +2,7 @@ package com.dxctraining;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +17,7 @@ import org.springframework.web.filter.CorsFilter;
  * 2)@ComponentScan: so we dont have to provide on our own
  * 3) @AutoConfiguration so we dont have to provide on our own
  */
+@EnableDiscoveryClient
 @SpringBootApplication
 public class ProjectMain {
 

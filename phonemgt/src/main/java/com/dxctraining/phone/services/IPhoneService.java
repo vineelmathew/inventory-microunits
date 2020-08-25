@@ -10,4 +10,7 @@ public interface IPhoneService {
     void removePhone(int id);
     List<Phone> phonelist();
     Phone findById(int id);
+    boolean authenticateId(int id);
+    List<Phone> phonesByPrice(double price);
+    List<Phone> phonesBySuppliers(int id);
 }

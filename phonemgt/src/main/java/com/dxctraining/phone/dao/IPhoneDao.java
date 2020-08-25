@@ -7,4 +7,6 @@ public interface IPhoneDao {
     void removePhone(int id);
     List<Phone> phonelist();
     Phone findById(int id);
+    List<Phone> phoneByPrice(double price);
+    List<Phone> phonebySuppliers(int id);
 }

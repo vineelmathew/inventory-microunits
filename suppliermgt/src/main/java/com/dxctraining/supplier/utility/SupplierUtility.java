@@ -9,10 +9,8 @@ public class SupplierUtility {
 
     public SupplierDto supplierDto(Supplier supplier,int phoneid,String name)
     {
-        SupplierDto supplierDto=new SupplierDto(supplier.getId(),supplier.getName(),
-                supplier.getPassword(),supplier.getPhoneid());
-        supplierDto.setPhoneid(phoneid);
-        supplierDto.setProductName(name);
+        SupplierDto supplierDto=new SupplierDto(supplier.getId(),
+                supplier.getName(),supplier.getPassword());
         return supplierDto;
     }
 

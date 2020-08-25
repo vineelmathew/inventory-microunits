@@ -43,4 +43,21 @@ public class PhoneDaoImple implements IPhoneDao {
       }
       return phone;
     }
+
+    @Override
+    public List<Phone> phoneByPrice(double price) {
+        String jpaql="from Phone where price=:price";
+        TypedQuery<Phone> query=entityManager.createQuery(jpaql,Phone.class);
+        List<Phone> resultList = query.getResultList();
+        return resultList;
+    }
+
+    @Override
+    public List<Phone> phonebySuppliers(int id) {
+        String jpaql="from Phone where supplierId=:id";
+        TypedQuery<Phone> query=entityManager.createQuery(jpaql,Phone.class);
+        List<Phone> resultList = query.getResultList();
+        return resultList;
+
+    }
 }

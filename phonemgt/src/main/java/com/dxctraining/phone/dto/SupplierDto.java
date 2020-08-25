@@ -1,9 +1,10 @@
-package com.dxctraining.supplier.dto;
+package com.dxctraining.phone.dto;
 
 public class SupplierDto {
     private int id;
     private String name;
     private String password;
+
     public SupplierDto(int id, String name, String password) {
         this.id = id;
         this.name = name;
@@ -13,7 +14,7 @@ public class SupplierDto {
     {
 
     }
-    
+
     public int getId() {
         return id;
     }
@@ -37,5 +38,4 @@ public class SupplierDto {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }
