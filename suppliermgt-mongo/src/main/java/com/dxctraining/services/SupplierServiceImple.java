@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 
-@Service
+//@Service
 public class SupplierServiceImple implements ISupplierService {
     @Autowired
     private MongoTemplate mongo;
