@@ -16,8 +16,6 @@ public class SupplierRestController {
     @Autowired
     private ISupplierService supplierService;
 
-    @Autowired
-    private RestTemplate restTemplate;
 
     @Autowired
     private SupplierUtility supplierUtility;

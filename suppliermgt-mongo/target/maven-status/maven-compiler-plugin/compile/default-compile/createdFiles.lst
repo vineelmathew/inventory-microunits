@@ -1,7 +1,7 @@
 com\dxctraining\UI.class
 com\dxctraining\dto\CreateSupplier.class
 com\dxctraining\services\SupplierServiceImple.class
-com\dxctraining\SupplierMgtMain.class
+com\dxctraining\SupplierMain.class
 com\dxctraining\dto\SupplierDto.class
 com\dxctraining\entities\Supplier.class
 com\dxctraining\exceptions\CentralizedExceptionHandler.class

@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface ISupplierDao extends MongoRepository<Supplier,String> {
 
-
+    List<Supplier> findByName(String name);
 }

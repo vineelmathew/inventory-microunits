@@ -25,9 +25,6 @@ public class SupplierMain {
 		MongoTemplate template=new MongoTemplate(client,databaseName);
 		return template;
 	}
-	@Bean
-	public RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
+
 
 }
